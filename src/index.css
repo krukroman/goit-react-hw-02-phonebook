@@ -35,8 +35,13 @@ ol {
   list-style: none;
 }
 
-button {
+input,
+textarea {
   display: block;
+}
+
+button {
+  display: flex;
   margin: 0;
   padding: 0;
   cursor: pointer;
