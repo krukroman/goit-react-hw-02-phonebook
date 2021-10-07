@@ -1,4 +1,4 @@
-import s from './Filter.module.css';
+import s from './ContactsFilter.module.css';
 
 export default function Filter({ value, onChange }) {
   return (

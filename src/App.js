@@ -2,7 +2,7 @@ import { Component } from 'react';
 import { nanoid } from 'nanoid';
 import ContactsEditor from './Components/ContactsEditor';
 import ContactsList from './Components/ContactsList';
-import Filter from './Components/Filter';
+import ContactsFilter from './Components/ContactsFilter';
 
 export default class App extends Component {
   state = {
@@ -71,7 +71,7 @@ export default class App extends Component {
     return (
       <div>
         <ContactsEditor onSubmit={this.addContact} />
-        <Filter value={filter} onChange={this.changeFilter} />
+        <ContactsFilter value={filter} onChange={this.changeFilter} />
         <ContactsList
           contacts={visibleContacts}
           onDeleteContact={this.removeContact}
